@@ -16,7 +16,7 @@ kontrola opravnení
 $ ll
 ```
 
-prejsť do zložky a otvoriť v nej `VS Code`
+prejsť do zložky a otvoriť v nej `VS Code`, ortodoxný linuxový uctievač použije `Vim` pretože si nič jednoduchšie nezaslúži
 
 ```
 $ cd git
@@ -163,4 +163,14 @@ vrátenie na master vetvu zadaním príkazu `git checkout master`
 
 ```
 $ git checkout master
+```
+
+pri commite bez komentáru sa môže otvoriť Vim, upravovať sa dá v insert móde stlačením `i`, do prvého riadku napísať komentár, stlačením `ESC` sa vráti do command módu, uložiť a zavrieť sa dá príkazom `:wq`
+
+```
+$ git add .
+$ git commit
+i
+# napísať komentár
+:wq 
 ```
