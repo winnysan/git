@@ -201,8 +201,9 @@ $ git branch -M main          # master
 $ git push -u origin main     # master
 ```
 
-príkaz `git pull origin master` stiahne zo servera zmeny v `master` vetve
+príkaz `git pull origin master` stiahne zo servera zmeny v `master` vetve, potom stačí písať `git pull`
 
 ```
 $ git pull origin master
+$ git pull
 ```
