@@ -102,8 +102,9 @@ $ git log
 
 vytvorené súbory `index.html` a `app.js`
 
-pridanie nových súborov, parameter `.` vyberie všetky súbory v adresári, paremeter `*.png` vyberie všetky súbory s príponou png, atď...
+pridanie a commitnutie nových súborov, parameter `.` vyberie všetky súbory v adresári, paremeter `*.png` vyberie všetky súbory s príponou png, atď...
 
 ```
 $ git add .
+$ git commit -m "pridané nové súbory"
 ```
