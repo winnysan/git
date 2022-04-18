@@ -309,3 +309,5 @@ tak isto pri zlučovaní vetvy môže nastať konflikt, ktorý je treba najprv v
 $ git add new.html
 $ git commit -m "komentár"
 ```
+
+rozdiel v zlúčení medzi `merge` a `rebase` je ten, že pri `merge` sa presunú z jednej vetvy do druhej, pričom sa vetvy zanechajú, pri `rebase` sa vetvy spoja do jednej
