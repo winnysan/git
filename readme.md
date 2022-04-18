@@ -224,3 +224,30 @@ viac informácii o zmene `git whatchanged`
 ```
 $ git whatchanged origin/master -n 1
 ```
+
+v prípade, že sa robí na viacerých miestach, pri `git push` môže nastať konflikt, ak je na serveri už iná verzia
+
+```
+$ git push
+
+# To github.com:winnysan/git.git
+#  ! [rejected]        master -> master (fetch first)
+# error: failed to push some refs to 'git@github.com:winnysan/git.git'
+# hint: Updates were rejected because the remote contains work that you do
+# hint: not have locally. This is usually caused by another repository pushing
+# hint: to the same ref. You may want to first integrate the remote changes
+# hint: (e.g., 'git pull ...') before pushing again.
+# hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+
+v takom prípade treba stiahnuť verziu a opraviť konflikt
+
+```
+$ git pull
+
+<<<<<< HEAD
+    <title>Dokumentácia</title>
+======
+    <title>Nový titulok</title>
+>>>>>> ebfb64354104e67b847995494f8c71da4525db8a
+```
