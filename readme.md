@@ -27,7 +27,7 @@ $ code .
 
 vytvoriť nový súbor `readme.md`
 
-inicializovať git
+inicializovať `git`
 
 ```
 $ git init
