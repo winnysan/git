@@ -2,7 +2,9 @@
 
 vytvoriť zložku projektu `git`
 
+```
 $ sudo mkdir git
+```
 
 nastaviť oprávnenia pre užívateľa `marek`
 
@@ -175,7 +177,7 @@ i
 :wq
 ```
 
-na githube vytvoríme nový repozitár `git`, github ponúkne možnosti ak je ak ešte nieje alebo už je vytvorený repozitár, príkaz `git remote add origin` vytvorí spojenie s githubom
+na githube vytvoríme nový repozitár `git`, github ponúkne možnosti ak je ak ešte nieje alebo už je vytvorený repozitár, príkaz `git remote add origin` vytvorí spojenie s githubom. príkaz `git push -u origin main` odošle zmeny na server, parameter u nastaví `origin main` ako defaultné, stačí ďalej písať `git push` až do zmeny
 
 ```
 # nový repozitár
@@ -196,4 +198,3 @@ $ git remote add origin git@github.com:winnysan/git.git
 $ git branch -M main          # master
 $ git push -u origin main     # master
 ```
-
