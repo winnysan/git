@@ -115,8 +115,15 @@ ak po úprave a označení súboru `git add` nechceme poslať zmenu do novej ver
 $ git restore --staged readme.md
 ```
 
-preskočenie `git add` pridaním parametra `a` do commitu
+preskočenie `git add` pridaním parametra `a` do commitu, nefunguje pre nové súbory, tie treba pridať cez `git add`
 
 ```
 $ git commit -am "preskočenie príkazu git add pridaním parametra a do commitu"
+```
+
+po vymazaní súboru `app.js` označenie a commitnutie
+
+```
+$ git add app.js
+$ git commit -m "vymazaný súbor app.js"
 ```
