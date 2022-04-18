@@ -311,3 +311,19 @@ $ git commit -m "komentár"
 ```
 
 rozdiel v zlúčení medzi `merge` a `rebase` je ten, že pri `merge` sa presunú z jednej vetvy do druhej, pričom sa vetvy zanechajú, pri `rebase` sa vetvy spoja do jednej
+
+súbory a adresáre ktoré nechceme zdielať na server, zapíšeme do súboru `.gitingnore` ktorý si najprv vytvoríme
+
+```
+/node_modules
+/vendor
+.env
+```
+
+`.gitignore` commitneme a odošleme na server
+
+```
+$ git add .gitignore
+$ git commit -m "gitignore"
+$ git push origin master
+```
