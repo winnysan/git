@@ -172,5 +172,28 @@ $ git add .
 $ git commit
 i
 # napísať komentár
-:wq 
+:wq
 ```
+
+na githube vytvoríme nový repozitár `git`, github ponúkne možnosti ak je ak ešte nieje alebo už je vytvorený repozitár, príkaz `git remote add origin` vytvorí spojenie s githubom
+
+```
+# nový repozitár
+$ git init
+$ git add README.md
+$ git commit -m "first commit"
+$ git branch -M main          # master
+$ git remote add origin git@github.com:winnysan/git.git
+# git remote add origin https://github.com/winnysan/git.git
+$ git push -u origin main     # master
+
+```
+
+```
+# existujúci repozitár
+$ git remote add origin git@github.com:winnysan/git.git
+# git remote add origin https://github.com/winnysan/git.git
+$ git branch -M main          # master
+$ git push -u origin main     # master
+```
+
