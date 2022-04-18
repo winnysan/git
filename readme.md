@@ -218,3 +218,9 @@ $ git status
 # Your branch is ahead of 'origin/master' by 1 commit.
 $ git push
 ```
+
+viac informácii o zmene `git whatchanged`
+
+```
+$ git whatchanged origin/master -n 1
+```
