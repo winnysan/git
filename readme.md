@@ -108,3 +108,15 @@ pridanie a commitnutie nových súborov, parameter `.` vyberie všetky súbory v
 $ git add .
 $ git commit -m "pridané nové súbory"
 ```
+
+ak po úprave a označení súboru `git add` nechceme poslať zmenu do novej verzie, môžeme to zrušiť príkazom `git restore --staged`
+
+```
+$ git restore --staged readme.md
+```
+
+preskočenie `git add` pridaním parametra `a` do commitu
+
+```
+$ git commit -am "preskočenie príkazu git add pridaním parametra a do commitu"
+```
