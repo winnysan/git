@@ -152,3 +152,15 @@ vrátenie na poslednú verziu súboru príkazom `git checkout`
 ```
 $ git checkout -- readme.md
 ```
+
+pre vrátenie sa staršej verzii programu v `git log` si nájdeme commit k verzii, ktorý pridáme do príkazu `git checkout`
+
+```
+$ git checkout 85ea366b6224f0c71be512a75da1a39cdbc86328
+```
+
+vrátenie na master vetvu zadaním príkazu `git checkout master`
+
+```
+$ git checkout master
+```
