@@ -288,3 +288,24 @@ novú vetvu a prepnutie do nej je možne spraviť skrátene s parametrom `b`
 ```
 $ git checkout -b newbranch
 ```
+
+vetvy zlúčime tým, že sa prepneme do hlavnej vetvy a zadáme príkaz `git merge` a názov vetvy
+
+```
+$ git checkout master
+$ git merge newbranch
+```
+
+tak isto pri zlučovaní vetvy môže nastať konflikt, ktorý je treba najprv vyriešiť a následne commitnúť
+
+```
+<<<<<< HEAD
+    <title>New</title>
+======
+    <title>New 2</title>
+>>>>>> newbranch2
+
+
+$ git add new.html
+$ git commit -m "komentár"
+```
