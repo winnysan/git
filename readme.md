@@ -133,3 +133,22 @@ upravenie logu parametrami, z logu sa vychádza klávesou `q`
 ```
 $ git log --graph --decorate --abbrev-commit --all --pretty=oneline
 ```
+
+kontrola zmeny v súbore príkazom `git diff`
+
+```
+$ git diff
+
+# +
+# +kontrola zmeny v súbore príkazom `git diff`
+# +
+# +```
+# +$ git diff
+# +```
+```
+
+vrátenie na poslednú verziu súboru príkazom `git checkout`
+
+```
+$ git checkout -- readme.md
+```
