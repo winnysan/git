@@ -207,3 +207,14 @@ príkaz `git pull origin master` stiahne zo servera zmeny v `master` vetve, poto
 $ git pull origin master
 $ git pull
 ```
+
+príkaz `git remote update` skontroluje zmeny na serveri, na základe stavu podľa `git status` spustiť `git push` (Your branch is ahead...) alebo `git pull` (Your branch is behind...)
+
+```
+$ git remote update
+# Fetching origin
+$ git status
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+$ git push
+```
