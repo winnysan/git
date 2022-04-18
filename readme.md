@@ -1,3 +1,5 @@
+# Git
+
 vytvoriť zložku projektu `git`
 
 $ sudo mkdir git
@@ -76,4 +78,12 @@ $ git commit -m "prvý commit readme.md"
 # [master (root-commit) 73ca806] prvý commit readme.md
 #  1 file changed, 53 insertions(+)
 #  create mode 100644 readme.md
+```
+
+rekaputulácia po zmene súboru `readme.md` s komentárom `zmena`
+
+```
+git status
+git add readme.md
+git commit -m "zmena"
 ```
