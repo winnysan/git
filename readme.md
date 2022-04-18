@@ -1,15 +1,29 @@
-# Git
+# Git a Github
 
-vytvoriť zložku projektu `git`
-
-```
-$ sudo mkdir git
-```
-
-nastaviť oprávnenia pre užívateľa `marek`
+inštalácia `git` cez príkazový riadok a overenie verzie
 
 ```
-$ sudo chown -R marek git
+$ apt-get install git
+$ git --version
+```
+
+`git` nastavenie
+
+```
+$ git config --global user.name "username"
+$ git config --global user.email "useremail"
+```
+
+vytvoriť zložku projektu `project`
+
+```
+$ sudo mkdir project
+```
+
+nastaviť oprávnenia pre užívateľa `user`
+
+```
+$ sudo chown -R user git
 ```
 
 kontrola opravnení
@@ -18,10 +32,10 @@ kontrola opravnení
 $ ll
 ```
 
-prejsť do zložky a otvoriť v nej `VS Code`, ortodoxný linuxový uctievač použije `Vim` pretože si nič jednoduchšie nezaslúži
+prejsť do zložky a otvoriť v nej editor s podporou gitu ako je `vscode`, ortodoxný linuxový uctievač použije `vim` pretože si nič iné nezaslúži
 
 ```
-$ cd git
+$ cd project
 $ code .
 ```
 
@@ -31,7 +45,7 @@ inicializovať `git`
 
 ```
 $ git init
-# Initialized empty Git repository in /var/www/git/.git/
+# Initialized empty Git repository in /var/www/project/.git/
 ```
 
 zobrazenie skrytých súborov
@@ -90,13 +104,13 @@ $ git add readme.md
 $ git commit -m "zmena"
 ```
 
-história zmien projektu
+historia zmien projektu
 
 ```
 $ git log
 
 # commit 73ca806b654fc2bdb590faa1d9b88cdd63728b23
-# Author: winnysan <maarvinko@gmail.com>
+# Author: user <email>
 # Date:   Mon Apr 18 10:22:08 2022 +0200
 
 #    prvý commit readme.md
@@ -187,16 +201,16 @@ $ git init
 $ git add README.md
 $ git commit -m "first commit"
 $ git branch -M main          # master
-$ git remote add origin git@github.com:winnysan/git.git
-# git remote add origin https://github.com/winnysan/git.git
+$ git remote add origin git@github.com:user/project.git
+# git remote add origin https://github.com/user/project.git
 $ git push -u origin main     # master
 
 ```
 
 ```
 # existujúci repozitár
-$ git remote add origin git@github.com:winnysan/git.git
-# git remote add origin https://github.com/winnysan/git.git
+$ git remote add origin git@github.com:user/project.git
+# git remote add origin https://github.com/user/project.git
 $ git branch -M main          # master
 $ git push -u origin main     # master
 ```
@@ -230,9 +244,9 @@ v prípade, že sa robí na viacerých miestach, pri `git push` môže nastať k
 ```
 $ git push
 
-# To github.com:winnysan/git.git
+# To github.com:user/project.git
 #  ! [rejected]        master -> master (fetch first)
-# error: failed to push some refs to 'git@github.com:winnysan/git.git'
+# error: failed to push some refs to 'git@github.com:user/project.git'
 # hint: Updates were rejected because the remote contains work that you do
 # hint: not have locally. This is usually caused by another repository pushing
 # hint: to the same ref. You may want to first integrate the remote changes
