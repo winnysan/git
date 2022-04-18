@@ -282,3 +282,9 @@ príkazom `git push origin newbranch` odošleme súbor do novej vetvy
 ```
 $ git push origin newbranch
 ```
+
+novú vetvu a prepnutie do nej je možne spraviť skrátene s parametrom `b`
+
+```
+$ git checkout -b newbranch
+```
