@@ -127,3 +127,9 @@ po vymazaní súboru `app.js` označenie a commitnutie
 $ git add app.js
 $ git commit -m "vymazaný súbor app.js"
 ```
+
+upravenie logu parametrami, z logu sa vychádza klávesou `q`
+
+```
+$ git log --graph --decorate --abbrev-commit --all --pretty=oneline
+```
