@@ -177,7 +177,9 @@ i
 :wq
 ```
 
-na githube vytvoríme nový repozitár `git`, github ponúkne možnosti ak je ak ešte nieje alebo už je vytvorený repozitár, príkaz `git remote add origin` vytvorí spojenie s githubom. príkaz `git push -u origin main` odošle zmeny na server, parameter u nastaví `origin main` ako defaultné, stačí ďalej písať `git push` až do zmeny
+na githube vytvoríme nový repozitár `git`, github ponúkne možnosti ak je ak ešte nieje alebo už je vytvorený repozitár, príkaz `git remote add origin` vytvorí spojenie s githubom.
+
+príkaz `git push -u origin main` odošle zmeny na server, parameter u nastaví `origin main` ako defaultné, stačí ďalej písať `git push` až do zmeny
 
 ```
 # nový repozitár
