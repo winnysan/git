@@ -251,3 +251,34 @@ $ git pull
     <title>Nový titulok</title>
 >>>>>> ebfb64354104e67b847995494f8c71da4525db8a
 ```
+
+príkaz `git branch` zobrazí všetky vetvy
+
+```
+git branch
+```
+
+novú vetvu vytvoríme `git branch` s názvom novej vetvy
+
+```
+$ git branch newbranch
+```
+
+medzi vetvami sa prepíname `git checkout` a názov vetvy
+
+```
+$ git checkout newbranch
+```
+
+vytvoríme nový súbor `new.html`, označíme `git add` a spravíme commit `git commit -m "komentár"`
+
+```
+$ git add new.html
+$ git commit -m "komentár"
+```
+
+príkazom `git push origin newbranch` odošleme súbor do novej vetvy
+
+```
+$ git push origin newbranch
+```
