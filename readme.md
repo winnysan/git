@@ -200,3 +200,9 @@ $ git remote add origin git@github.com:winnysan/git.git
 $ git branch -M main          # master
 $ git push -u origin main     # master
 ```
+
+príkaz `git pull origin master` stiahne zo servera zmeny v `master` vetve
+
+```
+$ git pull origin master
+```
