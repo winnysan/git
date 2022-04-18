@@ -80,10 +80,30 @@ $ git commit -m "prvý commit readme.md"
 #  create mode 100644 readme.md
 ```
 
-rekaputulácia po zmene súboru `readme.md` s komentárom `zmena`
+rekaputulácia: po zmene súboru `readme.md` s komentárom `zmena`
 
 ```
-git status
-git add readme.md
-git commit -m "zmena"
+$ git status
+$ git add readme.md
+$ git commit -m "zmena"
+```
+
+história zmien projektu
+
+```
+$ git log
+
+# commit 73ca806b654fc2bdb590faa1d9b88cdd63728b23
+# Author: winnysan <maarvinko@gmail.com>
+# Date:   Mon Apr 18 10:22:08 2022 +0200
+
+#    prvý commit readme.md
+```
+
+vytvorené súbory `index.html` a `app.js`
+
+pridanie nových súborov, parameter `.` vyberie všetky súbory v adresári, paremeter `*.png` vyberie všetky súbory s príponou png, atď...
+
+```
+$ git add .
 ```
