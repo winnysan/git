@@ -2,6 +2,8 @@
 
 **!** `#` v kóde znamená **komentár**
 
+---
+
 inštalácia `git` cez príkazový riadok a overenie verzie
 
 ```
