@@ -345,3 +345,9 @@ git add .gitignore
 git commit -m "gitignore"
 git push origin master
 ```
+
+vymazanie cache
+
+```
+git rm -r --cached .
+```
