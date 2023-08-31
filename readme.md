@@ -351,3 +351,16 @@ vymazanie cache
 ```
 git rm -r --cached .
 ```
+
+lokálne premenovanie vetvy
+
+```
+git checkout nazov-vetvy
+git branch -m novy-nazov-vetvy
+```
+
+lokálne vymazanie vetvy
+
+```
+git branch --delete nazov-vetvy
+```
